@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Team Step</string>
+    <string name="hello_world">hello world</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="device_status">Device Status:</string>
+    <string name="step_count">Step Count:</string>
+    <string name="battery_level">Battery Level:</string>
+    <string name="create">Create</string>
+
+</resources>

@@ -1,0 +1,35 @@
+package mibandsdk;
+
+/**
+ * Created by Jeremiah on 9/22/16.
+ */
+
+public enum RequestType {
+    DISCONNECT,
+    CONNECT,
+    PAIR,
+    BATTERY,
+    SENSOR_DATA,
+    SENSOR_DATA_ENABLE,
+    START_VIBRATE,
+    STOP_VIBRATE,
+    NORMAL,
+    REALTIME_STEPS_LISTENER,
+    REALTIME_STEPS_ENABLE,
+    REALTIME_STEPS_DISABLE,
+    LED,
+    LE_PARAMS,
+    GET_DATE,
+    SET_DATE,
+    DEVICE_INFO,
+    USER_INFO,
+    HEART_RATE_LISTENER,
+    HEART_RATE_ENABLE,
+    HEART_RATE_SLEEP,
+    ACTIVITY_LISTENER,
+    ACTIVITY_DATA_ACK,
+    ACTIVITY,
+    HIGH_LATENCY,
+    LOW_LATENCY,
+    UNKNOWN
+}

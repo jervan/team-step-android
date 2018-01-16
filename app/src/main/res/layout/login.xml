@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:background="?android:selectableItemBackground"
+        android:weightSum="1">
+        <!-- logo/banner -->
+        <ImageView android:src="@drawable/shoelogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/login_banner" />
+
+    <!--Email Prompt-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/username_login"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:inputType="text"
+                      android:hint="Username"
+                      android:textColor="@color/black"
+                      android:nextFocusDown="@+id/pass_login"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!-- Password Prompt -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/pass_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textColor="@color/black"
+                android:imeOptions="actionDone"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- login button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/loginBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:elevation="20dp"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:theme="@style/ColoredButton"
+            />
+
+        <!--clickable sign up text-->
+        <TextView android:id="@+id/signupClick"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="No account yet? Create one"
+            android:gravity="center"
+            android:textSize="18dip"
+            android:textColor="@color/darkgreen">
+        </TextView>
+
+        <!--clickable sign up text-->
+        <TextView android:id="@+id/forgotPass"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Forgot Password?"
+            android:gravity="center"
+            android:textSize="18dip"
+            android:textColor="@color/darkgreen"
+            android:visibility="gone">
+            </TextView>
+
+    </LinearLayout>
+</RelativeLayout>

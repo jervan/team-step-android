@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/darkgreen</item>
+        <item name="colorPrimaryDark">@color/brown</item>
+        <item name="colorAccent">@color/brown</item>
+        <item name="android:navigationBarColor">@color/brown</item>
+        <item name="drawerArrowStyle">@style/WhiteDrawerIconStyle</item>
+    </style>
+
+    <style name="ColoredButton" parent="Widget.AppCompat.Button">
+        <item name="colorButtonNormal">@color/green</item>
+    </style>
+
+
+    <style name="WhiteDrawerIconStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="MaterialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name = "android:theme">@style/Theme.MaterialButton</item>
+    </style>
+
+    <style name="Theme.MaterialButton" parent = "AppTheme">
+        <item name="android:colorButtonNormal">@color/brown</item>
+    </style>
+
+    <style name="DialogCustom" parent="AppTheme">
+        <item name="android:background">@color/gray</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>
